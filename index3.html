@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#eae8e3" />
+  <meta name="description" content="인원 ♥ 지윤" />
+  <title>IN WON & JI YOON</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style3.css" />
+</head>
+
+<body>
+  <main class="invite" id="top">
+
+    <!-- BGM -->
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="배경음악 재생/정지">
+    </button>
+
+    <audio
+      id="bgm"
+      src="music/wedding_music_첫사랑.mp3"
+      loop
+      preload="auto"
+      autoplay>
+    </audio>
+
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <a href="#top" class="brand">A Letter for you</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu-drawer" id="menuDrawer" aria-hidden="true">
+      <button class="menu-close" id="menuClose" type="button" aria-label="메뉴 닫기">×</button>
+      <a href="#intro">INVITATION</a>
+      <a href="#calendarSection">WEDDING DAY</a>
+      <a href="#gallerySection">GALLERY</a>
+      <a href="#locationSection">LOCATION</a>
+      <a href="#accountSection">ACCOUNT</a>
+    </nav>
+
+    <!-- 01. HERO / CREAM -->
+    <section class="hero cream-section">
+      <figure class="hero-photo image-box">
+        <img id="heroImage" src="images/hero.jpg" alt="웨딩 메인 사진" />
+        <span class="image-fallback">1</span>
+      </figure>
+
+      <div class="hero-copy">
+        <p class="tracking-title">WEDDING DAY.</p>
+
+        <h1 class="couple-title">
+          <span>Inwon </span>
+          <em>&amp;</em>
+          <span> Jiyoon</span>
+        </h1>
+
+        <p class="hero-date">2027.08.22. SUN 12:10 PM</p>
+        <p class="hero-place">RAMADA SEOUL SINDORIM HOTEL</p>
+        <p class="hero-hall">Saint Grace Hall</p>
+      </div>
+    </section>
+
+    <!-- 02. INTRO / PINK -->
+    <section class="pink-section intro-section" id="intro">
+      <p class="script-heading">Join us<br>for our wedding</p>
+
+      <div class="parents">
+        <p>
+          <strong>이상돈 · 황애리</strong>
+          <span>의 아들</span>
+          <b>인원</b>
+        </p>
+        <p>
+          <strong>김수진 · 류경희</strong>
+          <span>의 딸</span>
+          <b>지윤</b>
+        </p>
+      </div>
+
+      <div class="invitation-copy">
+        <p class="tracking-title">INVITATION</p>
+      
+        <div class="wedding-video">
+          <video autoplay muted loop playsinline preload="auto">
+            <source src="video/wedding.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <p>
+          같은 학교, 같은 과에서 만나<br>
+          어느새 여덟 번째 여름을 함께 맞이합니다.<br><br>
+          이제 연인으로 함께한 시간들을 지나<br>
+          앞으로의 모든 계절을 함께 살아가려 합니다.<br><br>
+          저희의 여덟 번째 여름이<br>
+          평생의 시작이 되는 날,<br>
+          소중한 걸음으로 함께해 주세요.
+        </p>
+      </div>
+    </section>
+
+    <!-- 03. CALENDAR / PINK -->
+    <section class="pink-section calendar-section" id="calendarSection">
+      <div class="calendar-date-head">
+        <strong>2027.08.22</strong>
+        <span>Sun 12:10 pm</span>
+      </div>
+
+      <div class="calendar-line"></div>
+      <div class="calendar" id="calendar"></div>
+      <div class="calendar-line"></div>
+    </section>
+
+    <!-- 04. GALLERY / PINK -->
+    <section class="pink-section gallery-section" id="gallerySection">
+      <p class="tracking-title gallery-title">GALLERY</p>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- 05. LOCATION / PINK -->
+    <section class="pink-section location-section" id="locationSection">
+      <p class="tracking-title">LOCATION</p>
+
+      <h2>라마다 서울 신도림 호텔</h2>
+      <p class="location-hall">5F 세인트 그레이스 홀</p>
+      <p class="location-sub">서울특별시 구로구 경인로 624</p>
+      <p class="location-tel">02-2162-2000</p>
+
+      <div class="map-preview">
+        <iframe
+          title="라마다서울신도림호텔 지도"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EA%B2%BD%EC%9D%B8%EB%A1%9C%20624&z=16&output=embed">
+        </iframe>
+      </div>
+
+      <div class="map-buttons">
+        <a href="https://map.naver.com/p/search/%EB%9D%BC%EB%A7%88%EB%8B%A4%EC%84%9C%EC%9A%B8%EC%8B%A0%EB%8F%84%EB%A6%BC%ED%98%B8%ED%85%94" target="_blank" rel="noopener">네이버 지도</a>
+        <a href="https://map.kakao.com/?q=%EB%9D%BC%EB%A7%88%EB%8B%A4%EC%84%9C%EC%9A%B8%EC%8B%A0%EB%8F%84%EB%A6%BC%ED%98%B8%ED%85%94" target="_blank" rel="noopener">카카오맵</a>
+        <a href="https://www.tmap.co.kr/" target="_blank" rel="noopener">티맵</a>
+      </div>
+
+      <div class="transport">
+        <article>
+          <h3>[지하철]</h3>
+          <p>1호선 신도림역 5번 출구 (도보5분)</p>
+          <p>2호선 신도림역 1번 출구 (도보5분)</p>
+          <p>* 신도림역 1번 출구 앞 셔틀버스 운행</p>
+        </article>
+        <article>
+          <h3>[주차 안내]</h3>
+          <p>호텔 주차장 이용 · 예식 당일 안내에 따라 주차해 주세요.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 06. ACCOUNT / CREAM -->
+    <section class="cream-section account-section" id="accountSection">
+      <p class="tracking-title">ACCOUNT</p>
+      <p class="account-kor">마음 전하실 곳</p>
+
+      <div class="account-list">
+        <details>
+          <summary>
+            <span>신랑측 계좌번호</span>
+            <i>⌄</i>
+          </summary>
+          <div class="account-content">
+            <div>
+              <span>신랑 이인원</span>
+              <b id="groomAccount">은행명 000-0000-0000</b>
+            </div>
+            <button type="button" data-copy="은행명 000-0000-0000">복사</button>
+          </div>
+
+          <div class="account-content">
+            <div>
+              <span>신랑 아버지 이상돈</span>
+              <b>국민은행 000000-00-000000</b>
+            </div>
+            <button type="button" data-copy="국민은행 000000-00-000000">복사</button>
+          </div>
+          
+          <div class="account-content">
+            <div>
+              <span>신랑 어머니 황애리</span>
+              <b>우리은행 0000-000-000000</b>
+            </div>
+            <button type="button" data-copy="우리은행 0000-000-000000">복사</button>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <span>신부측 계좌번호</span>
+            <i>⌄</i>
+          </summary>
+          <div class="account-content">
+            <div>
+              <span>신부 김지윤</span>
+              <b id="brideAccount">은행명 000-0000-0000</b>
+            </div>
+            <button type="button" data-copy="은행명 000-0000-0000">복사</button>
+          </div>
+
+          <div class="account-content">
+            <div>
+              <span>신부 아버지 김수진</span>
+              <b>국민은행 000000-00-000000</b>
+            </div>
+            <button type="button" data-copy="국민은행 000000-00-000000">복사</button>
+          </div>
+          
+          <div class="account-content">
+            <div>
+              <span>신부 어머니 류경희</span>
+              <b>우리은행 0000-000-000000</b>
+            </div>
+            <button type="button" data-copy="우리은행 0000-000-000000">복사</button>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 07. SHARE / CREAM -->
+    <section class="cream-section share-section">
+      <span class="share-line"></span>
+      <p class="tracking-title">SHARE</p>
+      <p class="share-desc">소중한 분들에게 전해주세요</p>
+
+      <div class="share-actions">
+        <button type="button" id="kakaoShare">
+          <span class="share-circle">●</span>
+          <em>KAKAO</em>
+        </button>
+
+        <button type="button" id="linkShare">
+          <span class="share-circle">↗</span>
+          <em>LINK</em>
+        </button>
+
+        <button type="button" id="nativeShare">
+          <span class="share-circle">⇧</span>
+          <em>MORE</em>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GALLERY MODAL -->
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+    <button class="gallery-close" id="galleryClose" type="button" aria-label="닫기">×</button>
+    <button class="gallery-arrow prev" id="galleryPrev" type="button" aria-label="이전 사진">‹</button>
+
+    <figure>
+      <img id="galleryModalImage" src="" alt="갤러리 확대 사진">
+    </figure>
+
+    <button class="gallery-arrow next" id="galleryNext" type="button" aria-label="다음 사진">›</button>
+    <span class="gallery-count" id="galleryCount"></span>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>
